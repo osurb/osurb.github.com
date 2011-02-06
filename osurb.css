@@ -1,0 +1,202 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: 1; }
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  quotes: none; }
+
+pre, a, abbr, acronym, address, big, cite, code {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: line-through; }
+
+dfn, em, font, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+kbd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  quotes: none; }
+
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none; }
+
+li, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+*:focus {
+  outline: 0; }
+
+body {
+  background-color: #5f0c17;
+  width: 650px;
+  margin: 0 auto;
+  font-family: verdana, sans-serif; }
+  body #header {
+    margin-bottom: -20px;
+    position: relative; }
+    body #header img {
+      width: 65%;
+      padding-left: 20px; }
+    body #header h1 {
+      position: absolute;
+      right: 20px;
+      bottom: 40px;
+      color: #e5e5e5;
+      font-size: 90px; }
+  body #content {
+    margin-bottom: 50px; }
+  body h2 {
+    color: #111111;
+    font-size: 22px;
+    padding: 0 0 10px 0; }
+  body .introduction {
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #e5e5e5;
+    /* background-color: rgba(255, 255, 255, 0.1) */
+    clear: both;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    body .introduction p {
+      color: #111111;
+      text-shadow: #bbbbbb 2px 1px 4px; }
+    body .introduction .relevant_links {
+      margin: 30px;
+      display: block; }
+  body a.button {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ecf36), to(#4e9326));
+    background-image: -moz-linear-gradient(center top, #6ecf36 0%, #4e9326 100%);
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.293);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 11em;
+    float: right; }
+    body a.button:hover {
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4e9326), to(#528f2c));
+      background-image: -moz-linear-gradient(center top, #4e9326 0%, #528f2c 100%); }

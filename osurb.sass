@@ -4,7 +4,7 @@ body
   background-color: #5F0C17
   width: 650px
   margin: 0 auto
-  font-family: arial
+  font-family: verdana, sans-serif
 
   #header
     margin-bottom: -20px
@@ -18,34 +18,43 @@ body
       bottom: 40px
       color: #e5e5e5
       font-size: 90px
+  #content
+    margin-bottom: 50px
   h2
-    color: #fff
+    color: #111
     font-size: 22px
     padding: 0 0 10px 0
 
   .introduction
     margin-bottom: 5px
     padding: 20px
-    background-color: #6F242E
-    background-color: rgba(255, 255, 255, 0.1)
-    p 
-      color: #e5e5e5
-      -moz-border-radius: 5px
-      -webkit-border-radius: 5px
-      border-radius: 5px
-  a
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
-    background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
-    color: white
-    display: block
-    margin: 10px 0px 30px 450px
-    padding: 8px 0
-    text-align: center
-    text-decoration: none
-    text-shadow: rgba(0, 0, 0, 0.292969) 
+    background-color: #e5e5e5 /* #6F242E tony's original colors) */
+    /* background-color: rgba(255, 255, 255, 0.1) */
+    clear: both
     -moz-border-radius: 5px
     -webkit-border-radius: 5px
     border-radius: 5px
+    p
+      color: #111 /* #e5e5e5 */
+      text-shadow: #bbb 2px 1px 4px
+    .relevant_links
+      margin: 30px
+      display: block
+  a.button
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
+    background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
+    color: white
+    display: inline-block
+    padding: 8px
+    margin: 10px 0px 10px 10px
+    text-align: center
+    text-decoration: none
+    text-shadow: rgba(0, 0, 0, 0.292969)
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    width: 11em                 /* roughly, 0.5 em per char * |longest_text| */
+    float: right
     &:hover
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4E9326), to(#528F2C))
       background-image: -moz-linear-gradient(center top , #4E9326 0%, #528F2C 100%)
