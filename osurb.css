@@ -146,14 +146,25 @@ caption, tbody, tfoot, thead, tr, th, td {
 
 body {
   background-color: #5f0c17;
-  width: 650px;
   margin: 0 auto;
   font-family: verdana, sans-serif;
   line-height: 1.5em; }
 
+#background-bar {
+  background-color: #33b00a;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7eca67), to(#2c9808));
+  background-image: -moz-linear-gradient(center top, #7eca67 0%, #2c9808 100%);
+  width: 100%;
+  height: 0.667em;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 #header {
+  margin: 0px auto;
   margin-bottom: -20px;
-  position: relative; }
+  position: relative;
+  width: 650px; }
   #header img {
     width: 35%;
     padding-left: 20px;
@@ -172,12 +183,14 @@ body {
       height: 2em;
       width: 25%;
       display: inline-block;
-      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ecf36), to(#4e9326));
-      background-image: -moz-linear-gradient(center top, #6ecf36 0%, #4e9326 100%);
+      background-color: #33b00a;
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7eca67), to(#2c9808));
+      background-image: -moz-linear-gradient(center top, #7eca67 0%, #2c9808 100%);
       float: left; }
       #header .relevant_links li:hover {
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4e9326), to(#528f2c));
-        background-image: -moz-linear-gradient(center top, #4e9326 0%, #528f2c 100%); }
+        background-color: #41e00c;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9ed78d), to(#3ac80b));
+        background-image: -moz-linear-gradient(center top, #9ed78d 0%, #3ac80b 100%); }
     #header .relevant_links li.first {
       -moz-border-radius-bottomleft: 5px;
       -moz-border-radius-bottomright: 0px;
@@ -208,12 +221,15 @@ body {
     /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326)) */
     /* background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%) */
     color: #111111;
+    text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 3px;
     display: block;
     text-align: center;
     text-decoration: none;
     height: 100%; }
 
 #content {
+  width: 650px;
+  margin: 0px auto;
   margin-bottom: 50px; }
   #content ul li.blurb {
     display: block;
@@ -244,3 +260,9 @@ body {
     #content ul .introduction p {
       color: #111111;
       text-shadow: #bbbbbb 2px 1px 4px; }
+
+em {
+  font-weight: bold;
+  color: #55aa3b;
+  font-style: normal;
+  text-shadow: none; }

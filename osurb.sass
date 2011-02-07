@@ -3,6 +3,9 @@
 $color_bg_red: #5F0C17
 $color_para_grey: #e5e5e5
 $color_dark_text: #111
+$color_green_base: #1c550b
+$color_green_dark: #103703
+$color_green_bright: #55aa3b
 
 $page_width: 650px
 $paragraph_padding_v: .5em
@@ -30,14 +33,26 @@ $button_width: 6.5em // (0.5em / char) * |max_button_text| / 2
 
 body
   background-color: $color_bg_red
-  width: $page_width
   margin: 0 auto
   font-family: verdana, sans-serif
   line-height: 1.5em
 
+#background-bar
+  background-color: lighten($color_green_dark, 25%)
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lighten($color_green_bright,15%)), to(lighten($color_green_dark,20%))) // from: 6ECF36 to: 4E9326
+  background-image: -moz-linear-gradient(center top , lighten($color_green_bright,15%) 0%, lighten($color_green_dark,20%) 100%)
+  width: 100%
+  height: $button_height / 3
+  position: absolute
+  top: 0
+  left: 0
+
 #header
+  margin: 0px auto
   margin-bottom: -20px
   position: relative
+  width: $page_width
+
   img
     width: 35%
     padding-left: 20px
@@ -58,12 +73,18 @@ body
       height: $button_height
       width: 25%
       display: inline-block
-      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
-      background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
+      background-color: lighten($color_green_dark, 25%)
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lighten($color_green_bright,15%)), to(lighten($color_green_dark,20%))) // from: 6ECF36 to: 4E9326
+      // background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
+      background-image: -moz-linear-gradient(center top , lighten($color_green_bright,15%) 0%, lighten($color_green_dark,20%) 100%)
+      // background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
       float: left
       &:hover
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4E9326), to(#528F2C))
-        background-image: -moz-linear-gradient(center top , #4E9326 0%, #528F2C 100%)
+        background-color: lighten($color_green_dark, 35%)
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lighten($color_green_bright,25%)), to(lighten($color_green_dark,30%))) // from: 6ECF36 to: 4E9326
+        //  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4E9326), to(#528F2C))
+        background-image: -moz-linear-gradient(center top , lighten($color_green_bright,25%) 0%, lighten($color_green_dark,30%) 100%)
+        // background-image: -moz-linear-gradient(center top , #4E9326 0%, #528F2C 100%)
 
     li.first
       +border_radius(0px,5px,0px,0px)
@@ -75,6 +96,7 @@ body
     /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
     /* background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
     color: $color_dark_text
+    text-shadow: rgba(255,255,255,0.5) 1px 1px 3px
     display: block
     text-align: center
     text-decoration: none
@@ -82,6 +104,8 @@ body
 
 
 #content
+  width: $page_width
+  margin: 0px auto
   margin-bottom: 50px
 
   ul
@@ -107,4 +131,8 @@ body
         color: #111 /* #e5e5e5 */
         text-shadow: #bbb 2px 1px 4px
 
-
+em
+  font-weight: bold
+  color: $color_green_bright
+  font-style: normal
+  text-shadow: none
