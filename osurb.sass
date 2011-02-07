@@ -4,7 +4,7 @@
 
 $color_bg_red: #5F0C17
 $color_para_grey: #e5e5e5
-$color_dark_text: #111
+$color_dark_text: #222
 $color_green_base: #1c550b
 $color_green_dark: #103703
 $color_green_bright: #55aa3b
@@ -32,6 +32,9 @@ $button_width: 6.5em // (0.5em / char) * |max_button_text| / 2
   border-bottom-right-radius: $bottom_right
   border-top-left-radius: $top_left
   border-top-right-radius: $top_right
+
+=beveled_text
+  text-shadow: rgba(0,0,0,0.5) 0px -1px 0px, rgba(255,255,255,0.5) 0px 1px 0px
 
 body
   background-color: $color_bg_red
@@ -97,8 +100,9 @@ body
 
     /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
     /* background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
-    color: $color_dark_text
-    text-shadow: rgba(255,255,255,0.5) 1px 1px 3px
+    color: $color_green_dark //$color_dark_text
+    +beveled_text
+    //text-shadow: rgba(255,255,255,0.5) 1px 1px 3px
     display: block
     text-align: center
     text-decoration: none

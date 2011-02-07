@@ -220,8 +220,8 @@ body {
   #header a.button {
     /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326)) */
     /* background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%) */
-    color: #111111;
-    text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 3px;
+    color: #103703;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px, rgba(255, 255, 255, 0.5) 0px 1px 0px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -236,7 +236,7 @@ body {
     clear: both;
     margin-bottom: 1.5em; }
   #content ul h2 {
-    color: #111111;
+    color: #222222;
     font-size: 1.1em;
     padding: 0 0 8px 0; }
   #content ul .introduction {
