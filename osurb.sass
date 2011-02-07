@@ -1,61 +1,110 @@
 @import reset.sass
 
+$color_bg_red: #5F0C17
+$color_para_grey: #e5e5e5
+$color_dark_text: #111
+
+$page_width: 650px
+$paragraph_padding_v: .5em
+$paragraph_padding_h: 16px
+$paragraph_width: $page_width - ($paragraph_padding_h * 2)
+$button_border_width: 2px
+$button_height: 2em
+$button_width: 6.5em // (0.5em / char) * |max_button_text| / 2
+
+// The border_radius function from Compass is much more cross-browser compatible,
+// but it is not easily transferred here. If this becomes an issue, use Compass.
+=border_radius($top_left, $bottom_left, $top_right, $bottom_right)
+  -moz-border-radius-bottomleft: $bottom_left
+  -moz-border-radius-bottomright: $bottom_right
+  -moz-border-radius-topleft: $top_left
+  -moz-border-radius-topright: $top_right
+  -webkit-border-bottom-left-radius: $bottom_left
+  -webkit-border-bottom-right-radius: $bottom_right
+  -webkit-border-top-left-radius: $top_left
+  -webkit-border-top-right-radius: $top_right
+  border-bottom-left-radius: $bottom_left
+  border-bottom-right-radius: $bottom_right
+  border-top-left-radius: $top_left
+  border-top-right-radius: $top_right
+
 body
-  background-color: #5F0C17
-  width: 650px
+  background-color: $color_bg_red
+  width: $page_width
   margin: 0 auto
   font-family: verdana, sans-serif
+  line-height: 1.5em
 
-  #header
-    margin-bottom: -20px
-    position: relative
-    img
-      width: 65%
-      padding-left: 20px
-    h1
-      position: absolute
-      right: 20px
-      bottom: 40px
-      color: #e5e5e5
-      font-size: 90px
-  #content
-    margin-bottom: 50px
-  h2
-    color: #111
-    font-size: 22px
-    padding: 0 0 10px 0
+#header
+  margin-bottom: -20px
+  position: relative
+  img
+    width: 35%
+    padding-left: 20px
+    margin-top: 15px
+  h1
+    position: absolute
+    right: 0px
+    bottom: 50px
+    color: $color_para_grey
+    font-size: 5.5em
+    text-shadow: rgba(0,0,0,0.7) 0px 2px 2px
 
-  .introduction
-    margin-bottom: 5px
-    padding: 20px
-    background-color: #e5e5e5 /* #6F242E tony's original colors) */
-    /* background-color: rgba(255, 255, 255, 0.1) */
-    clear: both
-    -moz-border-radius: 5px
-    -webkit-border-radius: 5px
-    border-radius: 5px
-    p
-      color: #111 /* #e5e5e5 */
-      text-shadow: #bbb 2px 1px 4px
-    .relevant_links
-      margin: 30px
-      display: block
+  .relevant_links
+    width: $page_width
+    font-size: .7em
+
+    li
+      height: $button_height
+      width: 25%
+      display: inline-block
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
+      background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
+      float: left
+      &:hover
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4E9326), to(#528F2C))
+        background-image: -moz-linear-gradient(center top , #4E9326 0%, #528F2C 100%)
+
+    li.first
+      +border_radius(0px,5px,0px,0px)
+    li.last
+      +border_radius(0px,0px,0px,5px)
+
   a.button
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
-    background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
-    color: white
-    display: inline-block
-    padding: 8px
-    margin: 10px 0px 10px 10px
+
+    /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6ECF36), to(#4E9326))
+    /* background-image: -moz-linear-gradient(center top , #6ECF36 0%, #4E9326 100%)
+    color: $color_dark_text
+    display: block
     text-align: center
     text-decoration: none
-    text-shadow: rgba(0, 0, 0, 0.292969)
-    -moz-border-radius: 5px
-    -webkit-border-radius: 5px
-    border-radius: 5px
-    width: 11em                 /* roughly, 0.5 em per char * |longest_text| */
-    float: right
-    &:hover
-      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4E9326), to(#528F2C))
-      background-image: -moz-linear-gradient(center top , #4E9326 0%, #528F2C 100%)
+    height: 100%
+
+
+#content
+  margin-bottom: 50px
+
+  ul
+    li.blurb
+      display: block
+      clear: both
+      margin-bottom: 1.5em
+
+    h2
+      color: $color_dark_text
+      font-size: 1.1em
+      padding: 0 0 8px 0
+
+    .introduction
+      +border_radius(5px,5px,5px,5px)
+      width: $paragraph_width
+      padding: $paragraph_padding_v $paragraph_padding_h
+      background-color: $color_para_grey /* #6F242E tony's original colors) */
+      /* background-color: rgba(255, 255, 255, 0.1) */
+      /* float: left */
+
+      p
+        color: #111 /* #e5e5e5 */
+        text-shadow: #bbb 2px 1px 4px
+
 

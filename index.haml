@@ -5,30 +5,40 @@
     %link(rel='stylesheet' type='text/css' href='osurb.css')
   %body
     #header
+      %ul.relevant_links
+        %li.first
+          %a.button{:href => "http://groups.google.com/group/studioctrubywebdev"} Join the Mailing List
+        %li
+          %a.button{:href => "http://twitter.com/#!/osurb"} Follow us on Twitter
+        %li
+          %a.button{:href => "http://webchat.freenode.net/"} #osurb on irc
+        %li.last
+          %a.button{:href => "https://github.com/osurb"} osu.rb on GitHub
       %h1 osu.rb
       %img{:id => 'logo', :src => 'osurb.png'}
     #content
-      .introduction
-        %h2 Who Are We?
-        %p
-          We're a bunch of students, graduates and alumni at the Ohio State University interested in using Ruby to create interesting things.
-      .relevant_links
-        %a.button{:href => "http://twitter.com/#!/osurb"} Follow us on Twitter
-      .introduction
-        %h2 Who Can Join?
-        %p
-          Current Ohio State students make up the bulk of our ranks, but anyone can join. Most important stuff is discussed at the weekly meeting, but you should also check out online communications.
-      .relevant_links
-        %a.button{:href => "http://groups.google.com/group/studioctrubywebdev"} Join the Mailing List
-      .introduction
-        %h2 Meetings
-        %p
-          We are currently meeting every Tuesday at 7:00pm in Dreese Labs room 264. We try to spend equal time on presentations or discussion and then switch gears to pairing to work on the quarterly project. We also use IRC for a lot of informal discussion throughout the week.
-      .relevant_links
-        %a.button{:href => "http://webchat.freenode.net/"} #osurb on irc
-      .introduction
-        %h2 Project
-        %p
-          Getting your hands dirty is the best way to learn. That's why we make an effort to take some project from concept to completion each semester. This gives us practical experience with all the technical challenges, design, project management, and collaboration.
-      .relevant_links
-        %a.button{:href => "https://github.com/osurb"} osu.rb on GitHub
+      %ul
+        %li.blurb
+          .introduction
+            %h2 Who Are We?
+            %p
+              We're a bunch of students, graduates and alumni at the Ohio State University interested in using Ruby to create interesting things.
+
+        %li.blurb
+          .introduction
+            %h2 Who Can Join?
+            %p
+              Current Ohio State students make up the bulk of our ranks, but anyone can join. Most important stuff is discussed at the weekly meeting, but you should also check out online communications.
+
+        %li.blurb
+          .introduction
+            %h2 Meetings
+            %p
+              We are currently meeting every Tuesday at 7:00pm in Dreese Labs room 264. We try to spend equal time on presentations or discussion and then switch gears to pairing to work on the quarterly project. We also use IRC for a lot of informal discussion throughout the week.
+
+        %li.blurb
+          .introduction
+            %h2 Project
+            %p
+              Getting your hands dirty is the best way to learn. That's why we make an effort to take some project from concept to completion each semester. This gives us practical experience with all the technical challenges, design, project management, and collaboration.
+
