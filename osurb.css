@@ -145,6 +145,8 @@ caption, tbody, tfoot, thead, tr, th, td {
   outline: 0; }
 
 body {
+  background-image: url("textured-bg.png");
+  background-repeat: repeat;
   background-color: #5f0c17;
   margin: 0 auto;
   font-family: verdana, sans-serif;

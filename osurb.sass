@@ -37,6 +37,8 @@ $button_width: 6.5em // (0.5em / char) * |max_button_text| / 2
   text-shadow: rgba(0,0,0,0.5) 0px -1px 0px, rgba(255,255,255,0.5) 0px 1px 0px
 
 body
+  background-image: url("textured-bg.png")
+  background-repeat: repeat
   background-color: $color_bg_red
   margin: 0 auto
   font-family: verdana, sans-serif
@@ -129,7 +131,9 @@ body
       +border_radius(5px,5px,5px,5px)
       width: $paragraph_width
       padding: $paragraph_padding_v $paragraph_padding_h
-      background-color: $color_para_grey /* #6F242E tony's original colors) */
+      background-color: $color_para_grey
+      //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lighten($color_para_grey, 10%)), to(darken($color_para_grey, 10%)))
+      //background-image: -moz-linear-gradient(center top , lighten($color_para_grey, 10%) 0%, darken($color_para_grey, 10%) 100%)
       /* background-color: rgba(255, 255, 255, 0.1) */
       /* float: left */
 
