@@ -4,9 +4,11 @@
 
 $color_bg_red: #5F0C17
 $color_para_grey: #e5e5e5
-$color_dark_text: #222
+$color_dark_text: #333
 $color_green_base: #1c550b
 $color_green_dark: #103703
+$color_red_dark: #5F121E
+$color_red_darker: #4F141D
 $color_green_bright: #55aa3b
 
 $page_width: 650px
@@ -41,7 +43,7 @@ body
   background-repeat: repeat
   background-color: $color_bg_red
   margin: 0 auto
-  font-family: verdana, sans-serif
+  font-family: Arial, Helvetica, sans-serif
   line-height: 1.5em
 
 #background-bar
@@ -123,15 +125,21 @@ body
       margin-bottom: 1.5em
 
     h2
-      color: $color_dark_text
-      font-size: 1.1em
+      color: $color_red_dark
+      font-size: 1.4em
       padding: 0 0 8px 0
+      font-family: Georgia
+      font-style: italic
+      font-weight: lighter
 
     .introduction
       +border_radius(5px,5px,5px,5px)
       width: $paragraph_width
       padding: $paragraph_padding_v $paragraph_padding_h
       background-color: $color_para_grey
+      -moz-box-shadow: 0 0 3px 3px $color_red_darker
+      -webkit-box-shadow: 0 0 3px 3px $color_red_darker
+      box-shadow: 0 0 3px 3px $color_red_darker
       //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lighten($color_para_grey, 10%)), to(darken($color_para_grey, 10%)))
       //background-image: -moz-linear-gradient(center top , lighten($color_para_grey, 10%) 0%, darken($color_para_grey, 10%) 100%)
       /* background-color: rgba(255, 255, 255, 0.1) */

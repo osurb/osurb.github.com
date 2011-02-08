@@ -149,7 +149,7 @@ body {
   background-repeat: repeat;
   background-color: #5f0c17;
   margin: 0 auto;
-  font-family: verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em; }
 
 #background-bar {
@@ -238,9 +238,12 @@ body {
     clear: both;
     margin-bottom: 1.5em; }
   #content ul h2 {
-    color: #222222;
-    font-size: 1.1em;
-    padding: 0 0 8px 0; }
+    color: #5f121e;
+    font-size: 1.4em;
+    padding: 0 0 8px 0;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: lighter; }
   #content ul .introduction {
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -257,6 +260,9 @@ body {
     width: 618px;
     padding: 0.5em 16px;
     background-color: #e5e5e5;
+    -moz-box-shadow: 0 0 3px 3px #4f141d;
+    -webkit-box-shadow: 0 0 3px 3px #4f141d;
+    box-shadow: 0 0 3px 3px #4f141d;
     /* background-color: rgba(255, 255, 255, 0.1) */
     /* float: left */ }
     #content ul .introduction p {
